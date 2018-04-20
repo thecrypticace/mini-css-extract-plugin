@@ -373,6 +373,10 @@ class MiniCssExtractPlugin {
     }
     return new ConcatSource(externalsSource, source);
   }
+
+  get loader() {
+    return MiniCssExtractPlugin.loader;
+  }
 }
 
 MiniCssExtractPlugin.loader = require.resolve('./loader');
